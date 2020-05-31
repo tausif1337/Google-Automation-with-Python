@@ -1,4 +1,4 @@
-1. What is recursion used for?
+### 1. What is recursion used for?
 
 - [ ] Recursion is used to create loops in languages where other loops are not available.
 
@@ -9,7 +9,7 @@
 - [x] Recursion lets us tackle complex problems by reducing the problem to a simpler one.
 
 
-2. Which of these activities are good use cases for recursive programs? Check all that apply.
+### 2. Which of these activities are good use cases for recursive programs? Check all that apply.
 
 - [x] Going through a file system collecting information related to directories and files.
 
@@ -22,7 +22,7 @@
 - [ ] Checking if a computer is connected to the local network.
 
 
-3. Fill in the blanks to make the is_power_of function return whether the number is a power of the given base. Note: base is assumed to be a positive number. Tip: for functions that return a boolean value, you can return the result of a comparison.
+### 3. Fill in the blanks to make the is_power_of function return whether the number is a power of the given base. Note: base is assumed to be a positive number. Tip: for functions that return a boolean value, you can return the result of a comparison.
 ```
 def is_power_of(number, base):
   # Base case: when number is smaller than base.
@@ -40,7 +40,7 @@ print(is_power_of(64,4)) # Should be True
 print(is_power_of(70,10)) # Should be False
 ```
 
-4. The count_users function recursively counts the amount of users that belong to a group in the company system, by going through each of the members of a group and if one of them is a group, recursively calling the function and counting the members. But it has a bug! Can you spot the problem and fix it?
+### 4. The count_users function recursively counts the amount of users that belong to a group in the company system, by going through each of the members of a group and if one of them is a group, recursively calling the function and counting the members. But it has a bug! Can you spot the problem and fix it?
 ```
 def count_users(group):
   count = 0
@@ -56,7 +56,7 @@ print(count_users("engineering")) # Should be 8
 print(count_users("everyone")) # Should be 18
 ```
 
-5. Implement the sum_positive_numbers function, as a recursive function that returns the sum of all positive numbers between the number n received and 1. For example, when n is 3 it should return 1+2+3=6, and when n is 5 it should return 1+2+3+4+5=15.
+### 5. Implement the sum_positive_numbers function, as a recursive function that returns the sum of all positive numbers between the number n received and 1. For example, when n is 3 it should return 1+2+3=6, and when n is 5 it should return 1+2+3+4+5=15.
 ```
 def sum_positive_numbers(n):
   if n<1:
