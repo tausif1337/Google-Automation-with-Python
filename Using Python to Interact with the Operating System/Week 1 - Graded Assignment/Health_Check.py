@@ -23,11 +23,11 @@ else:
     print('Network checks failed')
 
 
-/**First part of the lab
-edit usage from >75 to <75
+# First part of the lab:
+# edit usage from >75 to <75
 
-#### Third part of the lab, add
-elif check_localhost() and check_connectivity():
-    print("Everything ok")
-else:
-    print('Network checks failed')**/
+# Third part of the lab, add:
+# elif check_localhost() and check_connectivity():
+#     print("Everything ok")
+# else:
+#     print('Network checks failed')
