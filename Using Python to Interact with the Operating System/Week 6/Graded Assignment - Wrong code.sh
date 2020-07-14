@@ -1,7 +1,4 @@
-# This bash script was wrong. I took 1hr+ and it almost got the output, but I was getting a different filename it came out
-# home/<student number>/data/data/jane_xxxx.doc
-# I should be getting home/data/<student number>/data/jane_xxx.doc
-#couldn't figure out. sorry. I'm also rushing for time, so as long as I pass the course, I want to head over to other modules
+#FINDJANE.SH
 
 #!/bin/bash
 
@@ -15,3 +12,19 @@ for i in $files; do
   else
     echo "File doesn't exist"; fi
 done
+
+ 
+
+#CHANGEJANE.PY
+
+
+#!/usr/bin/env python3
+import sys
+import subprocess
+f= open (sys.argv[1],"r")
+
+for line in f.readlines():
+ old_name = line.strip()
+ new_name = old_name.replace("jane","jdoe")
+ subprocess.run(["mv",old_name,new_name])
+f.close()
